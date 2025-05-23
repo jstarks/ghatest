@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: PR stuff
         run: |
-          echo "source id: {{ github.event.workflow_run.id }}"
-          echo "source event: {{ github.event.workflow_run.event }}"
-          echo "pull requests: {{ github.event.workflow_run.pull_requests }}"
+          echo "source id: ${{ github.event.workflow_run.id }}"
+          echo "source event: ${{ github.event.workflow_run.event }}"
+          echo "pull requests: ${{ github.event.workflow_run.pull_requests }}"

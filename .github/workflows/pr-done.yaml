@@ -2,7 +2,7 @@ name: PR done
 
 on:
   workflow_run:
-    workflows: ["pr"]
+    workflows: ["pull request"]
     types:
       - completed
 
